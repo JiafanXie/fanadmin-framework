@@ -1,0 +1,40 @@
+{
+    "name": "fanadmin/framework",
+    "description": "fanadmin for thinkphp",
+    "version":"1.0.0",
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=8.0.0",
+        "topthink/think-multi-app": "^1.0",
+        "topthink/think-view": "^2.0",
+        "symfony/finder": "^6.0",
+        "nesbot/carbon": "^2.72",
+        "overtrue/wechat": "^5.30",
+        "aliyuncs/oss-sdk-php": "^2.7",
+        "guzzlehttp/guzzle": "^7.8",
+        "qiniu/php-sdk": "^7.12",
+        "firebase/php-jwt": "^6.10",
+        "qcloud/cos-sdk-v5": "v2.6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "FanAdmin\\": "src/core"
+        },
+        "files": [
+            "src/core/helper/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "xiejiafan",
+            "email": "82864861@qq.com"
+        }
+    ],
+    "extra": {
+        "think": {
+            "services": [
+                "FanAdmin\\CoreServiceProvider"
+            ]
+        }
+    }
+}
